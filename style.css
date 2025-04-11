@@ -1,0 +1,564 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Header */
+.header {
+    background: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 150px;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger .line {
+    width: 25px;
+    height: 3px;
+    background: #000000;
+    margin: 4px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    flex-grow: 1;
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.nav-links li a {
+    text-align: center;
+    color: #340044;
+    text-decoration: none;
+}
+
+.a_tel {
+    color: #340044;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    margin-left: 20px;
+}
+
+.a_tel:hover, .nav-links li a:hover {
+    color: #c500fc;
+}
+
+.sub-menu {
+    display: none;
+    list-style: none;
+}
+
+.sub-menu.visible {
+    display: block;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Acceuil */
+.conteneur_principal {
+    display: flex;
+    width: 100%; 
+    max-width: 1600px;
+    margin: 0 auto; 
+    box-sizing: border-box;
+}
+.portrait {
+    max-width: 600px;
+    width: 100%;
+}
+
+.conteneur_child {
+    margin-left: 100px;
+    width: 100%;
+
+}
+
+.h1_accueil {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-size: 40px;
+
+}
+
+.p-align {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+
+}
+
+.custom-buton a {
+    display: inline-block;
+    background-color:#ffffff ;
+    text-decoration: none;
+    color:#55006a;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    border: 2px solid #55006a;
+    padding: 10px 20px;
+    
+}
+
+.custom-button a:hover {
+    border: 2px solid #c500fc;
+    color: #c500fc;
+}
+
+.competences_conteneur_01, .competences_conteneur_02 {
+    display : flex;
+}
+
+.conteneur_architecture, 
+.conteneur_corseterie, 
+.conteneur_graphisme, 
+.conteneur_photographie  {
+    position:relative;
+    width: 700px;
+    height: 700px;
+    background-size: cover; 
+    background-position: center;
+    margin: 50px; 
+    border-radius: 20px; 
+    overflow: hidden; 
+}
+
+.conteneur_graphisme {
+    background-image: url("/img/Chrysea_logo.png");
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    
+}
+
+.conteneur_corseterie {
+    background-image: url("/img/Chrysea_Corseterie.jpg");
+    
+}
+
+.conteneur_architecture {
+    background-image: url("/img/Chrysea_Architecture.jpg");
+        
+}
+
+.conteneur_photographie {
+    background-image: url("/img/Chrysea_Photographie.jpg");
+  
+}
+
+
+h2 {
+    text-align: left;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-size: 40px;
+    
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+    border-radius: 20px;
+}
+
+.conteneur_graphisme:hover .overlay,
+.conteneur_corseterie:hover .overlay,
+.conteneur_architecture:hover .overlay,
+.conteneur_photographie:hover .overlay {
+    opacity: 1; 
+}
+
+
+.title {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    vertical-align: center;
+}
+
+/*CV*/
+
+.h2_CV {
+    margin-top: 100px;
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 800;
+    font-size: 40px;
+
+}
+
+.conteneur-parent {
+    margin: 0 auto;
+    gap:50px; 
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.child {
+    margin-top: 50px;
+    max-width: 50%;
+    flex : 1; 
+
+}
+
+.h3_CV {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.p_cv {
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.child img,
+.child video {
+    max-width: 100%; 
+    height: auto; 
+    display: block;
+    
+}
+
+/*Portfolio */
+
+/* Container for the slideshow */
+.slideshow-container {
+    position: relative;
+    max-width: 1400px; /* Adjust to your desired width */
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none; /* Hidden by default */
+    width: 100%;
+  }
+  
+  /* Fade effect */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+  }
+  
+  /* Navigation buttons */
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    user-select: none;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+  /* Dots (indicators) */
+  .dot-container {
+    text-align: center;
+    padding: 10px;
+    background: #f1f1f1;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .dot.active {
+    background-color: #717171;
+  }
+  
+  /* On hover, the dots turn darker */
+  .dot:hover {
+    background-color: #555;
+  }
+
+  .mySlides:first-child {
+    display: block;
+  }
+
+
+
+
+
+/*Contact*/ 
+.formulaire {
+    background: linear-gradient(to right, #afb8dd, #bfbafc, #c3a8ee, #fda4f9, #f8b7d0);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px 20px;
+    box-sizing: border-box;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.contact-form-container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    color: #333;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #5a0070;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #8500a7;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #310031;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: white;
+    padding: 20px 0;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+@media (max-width: 1024px) {
+    .burger {
+        display: flex;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #ffffff;
+        position: absolute;
+        top: 150px;
+        left: 0;
+        padding: 10px 0;
+    }
+    .nav-links.show {
+        display: flex;
+    }
+    .nav-links li {
+        text-align: center;
+        margin: 10px 0;
+    }
+    .a_tel {
+        color: #4e4e4e;
+        display: none;
+    }
+
+          
+/* Accueil */
+    .conteneur_principal {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 ;
+        padding: 0 20px;
+    }
+
+    .conteneur_child {
+        margin: 0;
+        width: 100%;
+        margin: 0;
+
+    }
+    
+    .competences_conteneur_01, .competences_conteneur_02 {
+        display: flex;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;             
+    }
+
+    .conteneur_architecture, 
+    .conteneur_corseterie, 
+    .conteneur_graphisme, 
+    .conteneur_photographie {
+        width: 100%;
+        margin: 25px 0;
+        padding: 0; 
+    }
+
+    /* CV */
+
+    .conteneur-parent {
+        width:100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding:0;
+    }
+
+    .child {
+        width: 100%; 
+        max-width: 100%; 
+    }
+
+    .h3_CV {
+        margin: 20px 20px; 
+    }
+
+    .p_cv {
+        margin: 20px 20px; 
+    }
+    
+
+    .child img,
+    .child video {
+    width: 100%;
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+    
+}
+
+
+
